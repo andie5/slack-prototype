@@ -54,6 +54,8 @@ const reducer = (state, action) => {
       return { ...state, ...action.payload };
     case "SET_SELECTED_TOPIC":
       return { ...state, selectedTopic: action.payload };
+    case "ADD_MESSAGE":
+      return { ...state, messages: [...state.messages, action.payload]}
     default:
       return state;
   }
