@@ -35,9 +35,6 @@ const MessageContentStyle = styled.div`
       flex-grow: 1;
       margin-bottom: 8px;
     }
-    input[type="submit"] {
-      display: none;
-    }
   }
   .avatar {
     width: 30px;
@@ -102,8 +99,7 @@ const MessageContent = () => {
             onChange={(e) => setText(e.target.value)}
             type='text'
             placeholder='Type your message here. Press Enter to send'
-          />{" "}
-          <input type='submit' />
+          />
         </form>
       ) : null}
     </MessageContentStyle>
